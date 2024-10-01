@@ -19,6 +19,10 @@ sources:
       - name: supplier
 
       - name: product
+
+      - name: _order_
+
+      - name: orderdetail
       
 
               
