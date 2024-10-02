@@ -4,6 +4,7 @@ with renomeado as (
         , cast(CUSTOMERID as string) as fk_cliente
         , cast(EMPLOYEEID as int) as fk_funcionario
         , cast(SHIPVIA as int) as fk_transportadora
+        , cast(id as int) as numero_pedido
         , cast(ORDERDATE as date) as data_do_pedido
         , cast(REQUIREDDATE as date) as data_requerida
         , cast(SHIPPEDDATE as date) as data_do_envio
@@ -16,4 +17,4 @@ with renomeado as (
 )   
 
 select *
-from renomeado*
+from renomeado
